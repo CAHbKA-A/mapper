@@ -1,20 +1,20 @@
-version: '3.9'
-
-volumes:
-  mapper_postgres:
-    driver: local
-
-services:
-  postgres:
-    image: postgres:latest
-    container_name: mapper_postgres
-    volumes:
-      - type: volume
-        source: mapper_postgres
-        target: /var/lib/postgresql/dataConfig
-    environment:
-      POSTGRES_DB: MapperDB
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: root
-    ports:
-      - "5432:5432"
+#version: '3.9'
+#
+#volumes:
+#  mapper_postgres:
+#    driver: local
+#
+#services:
+#  postgres:
+#    image: postgres:latest
+#    container_name: mapper_postgres
+#    volumes:
+#      - type: volume
+#        source: mapper_postgres
+#        target: /var/lib/postgresql/dataConfig
+#    environment:
+#      POSTGRES_DB: MapperDB
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: root
+#    ports:
+#      - "5432:5432"

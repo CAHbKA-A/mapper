@@ -80,6 +80,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -96,6 +101,25 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+<!--			<plugin>-->
+<!--				<groupId>org.flywaydb</groupId>-->
+<!--				<artifactId>flyway-maven-plugin</artifactId>-->
+<!--				<version>9.21.0</version>-->
+<!--				<configuration>-->
+<!--					<user>postgres</user>-->
+<!--					<password>root</password>-->
+<!--					<url>localhost:5432/MapperDB</url>-->
+<!--					<baseDir>/FlayWay/</baseDir>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+
+
+
+
+
+
+
 		</plugins>
 	</build>
 
