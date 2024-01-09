@@ -1,4 +1,4 @@
-package com.gps_dat.mapper;
+package com.mapper.devices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
