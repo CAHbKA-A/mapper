@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
@@ -26,10 +27,6 @@ public class Device {
     private String token;
 
 
-//    @ManyToOne
-//    @JoinColumn(name = "owner_id")
-//    private User ownerId;
-
     @Column(name = "owner_id")
     private long ownerId;
 
@@ -38,9 +35,11 @@ public class Device {
     private  LocalDateTime created;
 
     @UpdateTimestamp
-   @Column(name = "updated_at")
+    @Column(name = "updated_at")
     private  LocalDateTime updatedAt;
 
+    @OneToMany(mappedBy = "deviceId", cascade = CascadeType.PERSIST)
+    private List<MetricBin> metricBinsList;
 
 
 

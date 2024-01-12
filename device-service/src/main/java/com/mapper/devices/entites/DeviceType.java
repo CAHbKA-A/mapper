@@ -1,7 +1,5 @@
 package com.mapper.devices.entites;
 
-
-
 import jakarta.persistence.*;
 import lombok.Data;
 
