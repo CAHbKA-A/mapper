@@ -1,0 +1,28 @@
+#spring.session.store-type=jdbc
+#spring.session.jdbc.initialize-schema=always
+#spring.datasource.generate-unique-name=false
+#spring.datasource.name=MapperDB
+#spring.session.timeout.seconds=900
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/MapperDB
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+    generate-unique-name: false # чтобы не генерил случайное имя БД
+    name: MapperDB
+
+  security:
+    user:
+      name: admin
+      password: 1234
+
+
+
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: ALWAYS
+      table-name: SPRING_SESSION
