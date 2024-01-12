@@ -6,12 +6,11 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @Entity
 @Table(name = "devices")
-public class Devices {
+public class Device {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -26,6 +25,11 @@ public class Devices {
     @Column(name = "token_id")
     private String token;
 
+
+//    @ManyToOne
+//    @JoinColumn(name = "owner_id")
+//    private User ownerId;
+
     @Column(name = "owner_id")
     private long ownerId;
 
@@ -37,6 +41,9 @@ public class Devices {
    @Column(name = "updated_at")
     private  LocalDateTime updatedAt;
 
-//    @OneToMany(mappedBy = "id", cascade = CascadeType.PERSIST)
-//    private List<MetricBin> metricList = new java.util.ArrayList<>();
+
+
+
+
+
 }

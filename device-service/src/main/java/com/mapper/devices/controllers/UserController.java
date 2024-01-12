@@ -1,8 +1,8 @@
 package com.mapper.devices.controllers;
 
-import com.mapper.devices.entites.Device;
-import com.mapper.devices.repositories.DeviceRepository;
-import com.mapper.devices.servises.DeviceService;
+import com.mapper.devices.entites.User;
+import com.mapper.devices.repositories.UserRepository;
+import com.mapper.devices.servises.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -16,16 +16,16 @@ import java.util.List;
 @Controller
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/devices")
-public class DeviceController {
-    private final DeviceRepository deviceRepository;
-    private final DeviceService deviceService;
+@RequestMapping("/users")
+public class UserController {
+    private final UserRepository userRepository;
+    private final UserService userService;
 
 
     @GetMapping
-    public List<Device> findAllDevices() {
+    public List<User> findAllUsers() {
 
-        return (deviceService.findAll());
+        return (userService.findAll());
 
     }
 }

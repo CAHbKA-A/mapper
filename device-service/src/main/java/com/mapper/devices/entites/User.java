@@ -9,10 +9,10 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users")
-public class Users {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "user_id")
     private long id;
 
     @Column(name = "user_name")
@@ -21,7 +21,7 @@ public class Users {
     @Column(name = "description")
     private String description;
 
-//    @OneToMany(mappedBy = "id", cascade = CascadeType.PERSIST)
-//    private List<Devices> devicesList;
+    @OneToMany(mappedBy = "ownerId", cascade = CascadeType.PERSIST)
+    private List<Device> devicesList;
 
 }
