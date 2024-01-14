@@ -7,7 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -19,5 +21,11 @@ public class DeviceService {
         return deviceRepository.findAll();
     }
 
+    public Optional<Device> findById(Long id) {
+        return deviceRepository.findById(id);
+    }
 
+  //  public List<Device> findMetricBinById(Long deviceId) {return deviceRepository.findAllById(deviceId);
+
+   // }
 }
