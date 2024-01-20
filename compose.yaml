@@ -4,6 +4,7 @@ volumes:
   mapper_postgres:
     driver: local
 
+
 services:
   postgres:
     image: postgres:latest
@@ -18,3 +19,13 @@ services:
       POSTGRES_PASSWORD: root
     ports:
       - "5432:5432"
+
+
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    restart: unless-stopped
+    ports:
+      - 1883:1883
+    volumes:
+      - ./mosquitto.conf:/mosquitto.conf
