@@ -6,6 +6,9 @@
 	<modules>
 		<module>device-service</module>
         <module>api</module>
+        <module>mqtt-gateway</module>
+        <module>front-service</module>
+        <module>IOT_Test_Devices</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

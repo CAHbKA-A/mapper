@@ -1,10 +1,3 @@
-#spring.session.store-type=jdbc
-#spring.session.jdbc.initialize-schema=always
-#spring.datasource.generate-unique-name=false
-#spring.datasource.name=MapperDB
-#spring.session.timeout.seconds=900
-
-
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/MapperDB
@@ -26,3 +19,7 @@ spring:
     jdbc:
       initialize-schema: ALWAYS
       table-name: SPRING_SESSION
+
+
+  thymeleaf:
+    cache: false  # выключаем кэширование страниц на время разработки

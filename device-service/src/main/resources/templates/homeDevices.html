@@ -1,0 +1,23 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+12321321
+<table>
+
+    <tr th:each="device1 :${devices}">
+        <td th:text="${device1.id}"></td>
+        <td th:text="${device1.title}"></td>
+
+
+    </tr>
+</table>
+</body>
+
+</html>

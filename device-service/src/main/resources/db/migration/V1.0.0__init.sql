@@ -25,7 +25,7 @@ create table devices
     updated_at  timestamp default current_timestamp
 );
 insert into devices (device_name, device_type_id, token_id, owner_id)
-values ('GPS_tracker1_test', 1, 'asw2' , 1 ),
+values ('GPS_tracker1_test', 1, 'token1' , 1 ),
        ('GPS_tracker2_test', 1, 'asw3' , 2 ),
        ('GPS_tracker3_test', 1, 'asw3' , 1 );
 
