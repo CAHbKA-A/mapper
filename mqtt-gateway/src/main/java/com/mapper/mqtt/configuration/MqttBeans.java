@@ -9,7 +9,6 @@ import org.springframework.integration.core.MessageProducer;
 import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
 import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
-import org.springframework.integration.mqtt.outbound.MqttPahoMessageHandler;
 import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 import org.springframework.integration.mqtt.support.MqttHeaders;
 import org.springframework.messaging.Message;
@@ -25,7 +24,7 @@ public class MqttBeans {
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
         MqttConnectOptions options = new MqttConnectOptions();
 
-        options.setServerURIs(new String[] { "tcp://localhost:1883" });
+        options.setServerURIs(new String[]{"tcp://localhost:1883"});
 //        options.setServerURIs(new String[] { "tcp://172.16.1.7:1883" });
         options.setUserName("mosquito");
         String pass = "token1";
@@ -36,6 +35,7 @@ public class MqttBeans {
 
         return factory;
     }
+
     @Bean
     public MessageChannel mqttInputChannel() {
         return new DirectChannel();
@@ -62,33 +62,18 @@ public class MqttBeans {
             @Override
             public void handleMessage(Message<?> message) throws MessagingException {
                 String topic = message.getHeaders().get(MqttHeaders.RECEIVED_TOPIC).toString();
-                if(topic.equals("IOT/CO2")) {
+                if (topic.equals("IOT/CO2")) {
                     System.out.println("OUR topic");
                     System.out.println(message.getPayload());
-                }
-                else {
+                } else {
                     System.out.println("spam topic");
-                    System.out.println(message.getPayload());}
+                    System.out.println(message.getPayload());
+                }
 
             }
 
         };
     }
 
-
-    @Bean
-    public MessageChannel mqttOutboundChannel() {
-        return new DirectChannel();
-    }
-    @Bean
-    @ServiceActivator(inputChannel = "mqttOutboundChannel")
-    public MessageHandler mqttOutbound() {
-        //clientId is generated using a random number
-        MqttPahoMessageHandler messageHandler = new MqttPahoMessageHandler("serverOut", mqttClientFactory());
-        messageHandler.setAsync(true);
-        messageHandler.setDefaultTopic("#");
-        messageHandler.setDefaultRetained(false);
-        return messageHandler;
-    }
 
 }

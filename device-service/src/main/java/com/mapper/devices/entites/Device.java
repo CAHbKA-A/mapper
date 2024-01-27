@@ -21,7 +21,7 @@ public class Device {
     private String name;
 
     @Column(name = "deviceTypeId")
-    private String device_type_id;
+    private String deviceTypeId;
 
     @Column(name = "token_id")
     private String token;

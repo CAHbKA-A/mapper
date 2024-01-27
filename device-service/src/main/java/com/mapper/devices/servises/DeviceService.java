@@ -4,10 +4,8 @@ import com.mapper.devices.entites.Device;
 import com.mapper.devices.repositories.DeviceRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
