@@ -1,4 +1,4 @@
-package com.mapper.mqtt.configuration;
+package com.mapper.mqtt.services;
 
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.springframework.context.annotation.Bean;
@@ -9,6 +9,7 @@ import org.springframework.integration.core.MessageProducer;
 import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
 import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
+import org.springframework.integration.mqtt.outbound.MqttPahoMessageHandler;
 import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 import org.springframework.integration.mqtt.support.MqttHeaders;
 import org.springframework.messaging.Message;
@@ -17,7 +18,7 @@ import org.springframework.messaging.MessageHandler;
 import org.springframework.messaging.MessagingException;
 
 @Configuration
-public class MqttBeans {
+public class MqttService {
 
     @Bean
     public MqttPahoClientFactory mqttClientFactory() {
@@ -75,5 +76,19 @@ public class MqttBeans {
         };
     }
 
+    @Bean
+    public MessageChannel mqttOutboundChannel() {
+        return new DirectChannel();
+    }
+
+    @Bean
+    @ServiceActivator(inputChannel = "mqttOutboundChannel")
+    public MessageHandler mqttOutbound() {
+        MqttPahoMessageHandler messageHandler = new MqttPahoMessageHandler("serverOut", mqttClientFactory());
+        messageHandler.setAsync(true);
+        messageHandler.setDefaultTopic("#");
+        messageHandler.setDefaultRetained(false);
+        return messageHandler;
+    }
 
 }
