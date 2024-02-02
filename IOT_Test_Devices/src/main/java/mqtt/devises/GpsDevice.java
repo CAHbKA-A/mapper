@@ -6,9 +6,9 @@ import lombok.Data;
 @Data
 public class GpsDevice {
 
-    private String name ;
-    private String deviceTypeId ;
-    private String token ;
-    private long ownerId ;
+    private String name;
+    private String token;
+    private ValuesGpsDevices values;
 
 }
+

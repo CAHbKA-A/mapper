@@ -63,7 +63,7 @@ public class MqttService {
             @Override
             public void handleMessage(Message<?> message) throws MessagingException {
                 String topic = message.getHeaders().get(MqttHeaders.RECEIVED_TOPIC).toString();
-                if (topic.equals("IOT/CO2")) {
+                if (topic.equals("IOT/token1")) {
                     System.out.println("OUR topic");
                     System.out.println(message.getPayload());
                 } else {
