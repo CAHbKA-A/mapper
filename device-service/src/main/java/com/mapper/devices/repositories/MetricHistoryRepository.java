@@ -9,4 +9,6 @@ import java.util.List;
 @Repository
 public interface  MetricHistoryRepository extends JpaRepository<MetricBin, Long> {
     public List<MetricBin> findAllByDeviceId (Long id);
+
+
 }

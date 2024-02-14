@@ -19,7 +19,7 @@ create table devices
     id          bigserial primary key,
     device_name varchar(255) not null,
     device_type_id bigserial,
-    token_id varchar(255) ,
+    token_id varchar(255) not null UNIQUE,
     owner_id     int  not null,
     created_at  timestamp default current_timestamp,
     updated_at  timestamp default current_timestamp
@@ -27,7 +27,7 @@ create table devices
 insert into devices (device_name, device_type_id, token_id, owner_id)
 values ('GPS_tracker1_test', 1, 'token1' , 1 ),
        ('GPS_tracker2_test', 1, 'asw3' , 2 ),
-       ('GPS_tracker3_test', 1, 'asw3' , 1 );
+       ('GPS_tracker3_test', 1, 'asw53' , 1 );
 
 
 --подддерживаемые метрики
@@ -83,8 +83,8 @@ create table metric_history
     device_id    bigserial,
     metric_id    bigserial,
     value       real,
-    created_at  timestamp default current_timestamp,
-    updated_at  timestamp default current_timestamp
+    created_at  timestamp default current_timestamp
+--     updated_at  timestamp default current_timestamp
 );
 
 insert into metric_history ( device_id , metric_id,   value , created_at)

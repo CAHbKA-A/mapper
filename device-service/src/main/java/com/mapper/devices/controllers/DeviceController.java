@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Slf4j
 @Controller
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/devices")
+@RequestMapping("/api/v1/devices")
+//@RequestMapping("/devices")
 public class DeviceController {
 
     private final DeviceService deviceService;
@@ -42,4 +44,10 @@ public class DeviceController {
         return (deviceService.findById(deviceId));
     }
 
+    //deviceID by token
+    @GetMapping("/token/{token}")
+    public Long findDeviceIdByToken (@PathVariable String  token) {
+              return (deviceService.findFirstByToken(token));
+    }
+//  http://localhost:8080/api/v1/devices/token/asw3
 }

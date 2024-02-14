@@ -1,5 +1,6 @@
 package com.mapper.mqtt;
-/*шлюз для mqtt сообщений от устройств*/
+/*шлюз для mqtt сообщений от устройств
+будет пропускать толшько валидные данные от легаотных пользователей (по легальному токену)*/
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

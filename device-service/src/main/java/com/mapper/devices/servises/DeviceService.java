@@ -22,8 +22,11 @@ public class DeviceService {
     public Optional<Device> findById(Long id) {
         return deviceRepository.findById(id);
     }
+   public Long findFirstByToken(String token) {
 
-  //  public List<Device> findMetricBinById(Long deviceId) {return deviceRepository.findAllById(deviceId);
 
-   // }
+        return deviceRepository.findFirstByToken(token).getId();
+   }
+
+
 }
