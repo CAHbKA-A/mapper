@@ -17,6 +17,7 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jdbc</artifactId>
@@ -84,41 +85,25 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
+        <!-- Logback -->
 
+
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-api</artifactId>-->
+<!--            <version>1.7.30</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>ch.qos.logback</groupId>-->
+<!--            <artifactId>logback-classic</artifactId>-->
+<!--            <version>1.2.3</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <excludes>-->
-<!--                        <exclude>-->
-<!--                            <groupId>org.projectlombok</groupId>-->
-<!--                            <artifactId>lombok</artifactId>-->
-<!--                        </exclude>-->
-<!--                    </excludes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-
-            <!--			<plugin>-->
-            <!--				<groupId>org.flywaydb</groupId>-->
-            <!--				<artifactId>flyway-maven-plugin</artifactId>-->
-            <!--				<version>9.21.0</version>-->
-            <!--				<configuration>-->
-            <!--					<user>postgres</user>-->
-            <!--					<password>root</password>-->
-            <!--					<url>localhost:5432/MapperDB</url>-->
-            <!--					<baseDir>/FlayWay/</baseDir>-->
-            <!--				</configuration>-->
-            <!--			</plugin>-->
-
-
-
-
-
-
 
         </plugins>
     </build>

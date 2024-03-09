@@ -1,0 +1,297 @@
+09.03.2024 15:28:11.868 [main] INFO   c.m.d.MapperApplication - Starting MapperApplication using Java 17 with PID 16080 (J:\java\mapper\device-service\target\classes started by User in J:\java\mapper)
+09.03.2024 15:28:11.870 [main] INFO   c.m.d.MapperApplication - No active profile set, falling back to 1 default profile: "default"
+09.03.2024 15:28:11.914 [main] INFO   o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'J:\java\mapper\compose.yaml'
+09.03.2024 15:28:13.155 [main] INFO   o.s.b.d.c.l.DockerComposeLifecycleManager - There are already Docker Compose services running, skipping startup
+09.03.2024 15:28:13.993 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:28:13.993 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09.03.2024 15:28:14.010 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mapper.devices.repositories.DeviceRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09.03.2024 15:28:14.010 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mapper.devices.repositories.MetricHistoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09.03.2024 15:28:14.011 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mapper.devices.repositories.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+09.03.2024 15:28:14.012 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+09.03.2024 15:28:14.018 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:28:14.018 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09.03.2024 15:28:14.035 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+09.03.2024 15:28:14.351 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+09.03.2024 15:28:14.363 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09.03.2024 15:28:14.364 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+09.03.2024 15:28:14.364 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+09.03.2024 15:28:14.404 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+09.03.2024 15:28:14.404 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 827 ms
+09.03.2024 15:28:14.584 [main] INFO   o.f.c.i.l.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+09.03.2024 15:28:14.584 [main] INFO   o.f.c.i.l.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+09.03.2024 15:28:14.584 [main] INFO   o.f.c.i.l.VersionPrinter - 
+09.03.2024 15:28:14.614 [main] INFO   o.f.c.FlywayExecutor - Database: jdbc:postgresql://127.0.0.1:5432/MapperDB (PostgreSQL 16.1)
+09.03.2024 15:28:14.620 [main] WARN   o.f.c.i.d.b.Database - Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+09.03.2024 15:28:14.645 [main] INFO   o.f.c.i.c.DbValidate - Successfully validated 1 migration (execution time 00:00.016s)
+09.03.2024 15:28:14.677 [main] INFO   o.f.c.i.c.DbMigrate - Current version of schema "public": 1.0.0
+09.03.2024 15:28:14.679 [main] INFO   o.f.c.i.c.DbMigrate - Schema "public" is up to date. No migration necessary.
+09.03.2024 15:28:14.696 [main] INFO   c.z.h.HikariDataSource - MapperDB - Starting...
+09.03.2024 15:28:14.722 [main] INFO   c.z.h.p.HikariPool - MapperDB - Added connection org.postgresql.jdbc.PgConnection@5cce40d7
+09.03.2024 15:28:14.723 [main] INFO   c.z.h.HikariDataSource - MapperDB - Start completed.
+09.03.2024 15:28:14.773 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09.03.2024 15:28:14.808 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+09.03.2024 15:28:14.831 [main] INFO   o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09.03.2024 15:28:14.946 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09.03.2024 15:28:15.455 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09.03.2024 15:28:15.457 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09.03.2024 15:28:15.681 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09.03.2024 15:28:16.212 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09.03.2024 15:28:16.226 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+09.03.2024 15:28:16.235 [main] INFO   c.m.d.MapperApplication - Started MapperApplication in 4.61 seconds (process running for 5.243)
+09.03.2024 15:30:04.654 [main] INFO   c.m.m.MqttApplication - Starting MqttApplication using Java 17 with PID 14672 (J:\java\mapper\mqtt-gateway\target\classes started by User in J:\java\mapper)
+09.03.2024 15:30:04.655 [main] INFO   c.m.m.MqttApplication - No active profile set, falling back to 1 default profile: "default"
+09.03.2024 15:30:04.696 [main] INFO   o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'J:\java\mapper\compose.yaml'
+09.03.2024 15:30:06.033 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Created
+09.03.2024 15:30:06.033 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Created
+09.03.2024 15:30:06.038 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Starting
+09.03.2024 15:30:06.038 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Starting
+09.03.2024 15:30:07.475 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Started
+09.03.2024 15:30:07.750 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Started
+09.03.2024 15:30:07.751 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Waiting
+09.03.2024 15:30:07.751 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Waiting
+09.03.2024 15:30:08.266 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Healthy
+09.03.2024 15:30:08.269 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Healthy
+09.03.2024 15:30:09.596 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:30:09.596 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09.03.2024 15:30:09.609 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+09.03.2024 15:30:09.616 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:30:09.616 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09.03.2024 15:30:09.621 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+09.03.2024 15:30:09.728 [main] INFO   o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+09.03.2024 15:30:09.734 [main] INFO   o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+09.03.2024 15:30:10.026 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 6000 (http)
+09.03.2024 15:30:10.032 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6000"]
+09.03.2024 15:30:10.033 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+09.03.2024 15:30:10.033 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+09.03.2024 15:30:10.080 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+09.03.2024 15:30:10.080 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 945 ms
+09.03.2024 15:30:10.291 [main] INFO   o.f.c.i.l.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+09.03.2024 15:30:10.291 [main] INFO   o.f.c.i.l.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+09.03.2024 15:30:10.291 [main] INFO   o.f.c.i.l.VersionPrinter - 
+09.03.2024 15:30:10.325 [main] INFO   o.f.c.FlywayExecutor - Database: jdbc:postgresql://127.0.0.1:5432/MapperDB (PostgreSQL 16.1)
+09.03.2024 15:30:10.334 [main] WARN   o.f.c.i.d.b.Database - Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+09.03.2024 15:30:10.360 [main] INFO   o.f.c.i.c.DbValidate - Successfully validated 1 migration (execution time 00:00.016s)
+09.03.2024 15:30:10.393 [main] INFO   o.f.c.i.c.DbMigrate - Current version of schema "public": 1.0.0
+09.03.2024 15:30:10.393 [main] ERROR  o.f.c.i.c.DbMigrate - Schema "public" has version 1.0.0, but no migration could be resolved in the configured locations !
+09.03.2024 15:30:10.395 [main] INFO   o.f.c.i.c.DbMigrate - Schema "public" is up to date. No migration necessary.
+09.03.2024 15:30:10.419 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+09.03.2024 15:30:10.449 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c262f2f
+09.03.2024 15:30:10.451 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+09.03.2024 15:30:10.511 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09.03.2024 15:30:10.544 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+09.03.2024 15:30:10.574 [main] INFO   o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09.03.2024 15:30:10.749 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09.03.2024 15:30:11.011 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09.03.2024 15:30:11.014 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09.03.2024 15:30:11.338 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09.03.2024 15:30:11.891 [main] WARN   o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {message-handler:handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttInputChannel' has 1 subscriber(s).
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean 'handler.serviceActivator'
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {message-handler:mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttOutboundChannel' has 1 subscriber(s).
+09.03.2024 15:30:12.153 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean 'mqttOutbound.serviceActivator'
+09.03.2024 15:30:12.154 [main] INFO   o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway - started bean 'mqttGateway#senToMqtt(String, String)'
+09.03.2024 15:30:12.154 [main] INFO   o.s.i.g.AnnotationGatewayProxyFactoryBean - started bean 'mqttGateway'; defined in: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'; from source: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'
+09.03.2024 15:30:12.497 [main] INFO   o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - started bean 'inbound'; defined in: 'class path resource [com/mapper/mqtt/services/MqttService.class]'; from source: 'com.mapper.mqtt.services.MqttService.inbound()'
+09.03.2024 15:30:12.497 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6000"]
+09.03.2024 15:30:12.511 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 6000 (http) with context path ''
+09.03.2024 15:30:12.520 [main] INFO   c.m.m.MqttApplication - Started MqttApplication in 8.104 seconds (process running for 8.701)
+09.03.2024 15:31:00.015 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@5cce40d7 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.016 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@35ced15b (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.017 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@699910c2 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.017 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@63f3b0c0 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.017 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@31fef7f1 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.018 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@72f9ac9c (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.018 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@53c7ad01 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.018 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@2d4c7209 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.019 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@6b4b492e (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:00.020 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@54e99597 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:31:13.591 [SpringApplicationShutdownHook] INFO   o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - stopped bean 'inbound'; defined in: 'class path resource [com/mapper/mqtt/services/MqttService.class]'; from source: 'com.mapper.mqtt.services.MqttService.inbound()'
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - Removing {message-handler:mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttOutboundChannel' has 0 subscriber(s).
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - stopped bean 'mqttOutbound.serviceActivator'
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway - stopped bean 'mqttGateway#senToMqtt(String, String)'
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.g.AnnotationGatewayProxyFactoryBean - stopped bean 'mqttGateway'; defined in: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'; from source: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+09.03.2024 15:31:13.592 [SpringApplicationShutdownHook] INFO   o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+09.03.2024 15:31:13.593 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+09.03.2024 15:31:13.593 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - Removing {message-handler:handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+09.03.2024 15:31:13.593 [SpringApplicationShutdownHook] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttInputChannel' has 0 subscriber(s).
+09.03.2024 15:31:13.593 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - stopped bean 'handler.serviceActivator'
+09.03.2024 15:31:13.596 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09.03.2024 15:31:13.598 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09.03.2024 15:31:13.602 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+09.03.2024 15:31:18.017 [main] INFO   c.m.m.MqttApplication - Starting MqttApplication using Java 17 with PID 15696 (J:\java\mapper\mqtt-gateway\target\classes started by User in J:\java\mapper)
+09.03.2024 15:31:18.018 [main] INFO   c.m.m.MqttApplication - No active profile set, falling back to 1 default profile: "default"
+09.03.2024 15:31:18.060 [main] INFO   o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'J:\java\mapper\compose.yaml'
+09.03.2024 15:31:19.406 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Created
+09.03.2024 15:31:19.406 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Created
+09.03.2024 15:31:19.410 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Starting
+09.03.2024 15:31:19.410 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Starting
+09.03.2024 15:31:20.759 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Started
+09.03.2024 15:31:20.993 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Started
+09.03.2024 15:31:20.993 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Waiting
+09.03.2024 15:31:20.993 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Waiting
+09.03.2024 15:31:21.500 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Healthy
+09.03.2024 15:31:21.500 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Healthy
+09.03.2024 15:31:22.871 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:31:22.871 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09.03.2024 15:31:22.883 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+09.03.2024 15:31:22.889 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:31:22.889 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09.03.2024 15:31:22.893 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+09.03.2024 15:31:22.997 [main] INFO   o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+09.03.2024 15:31:23.003 [main] INFO   o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+09.03.2024 15:31:23.281 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 6000 (http)
+09.03.2024 15:31:23.287 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6000"]
+09.03.2024 15:31:23.288 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+09.03.2024 15:31:23.288 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+09.03.2024 15:31:23.332 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+09.03.2024 15:31:23.332 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 927 ms
+09.03.2024 15:31:23.524 [main] INFO   o.f.c.i.l.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+09.03.2024 15:31:23.524 [main] INFO   o.f.c.i.l.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+09.03.2024 15:31:23.524 [main] INFO   o.f.c.i.l.VersionPrinter - 
+09.03.2024 15:31:23.552 [main] INFO   o.f.c.FlywayExecutor - Database: jdbc:postgresql://127.0.0.1:5432/MapperDB (PostgreSQL 16.1)
+09.03.2024 15:31:23.560 [main] WARN   o.f.c.i.d.b.Database - Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+09.03.2024 15:31:23.577 [main] INFO   o.f.c.i.c.DbValidate - Successfully validated 1 migration (execution time 00:00.010s)
+09.03.2024 15:31:23.608 [main] INFO   o.f.c.i.c.DbMigrate - Current version of schema "public": 1.0.0
+09.03.2024 15:31:23.608 [main] ERROR  o.f.c.i.c.DbMigrate - Schema "public" has version 1.0.0, but no migration could be resolved in the configured locations !
+09.03.2024 15:31:23.611 [main] INFO   o.f.c.i.c.DbMigrate - Schema "public" is up to date. No migration necessary.
+09.03.2024 15:31:23.630 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+09.03.2024 15:31:23.656 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39ace1a7
+09.03.2024 15:31:23.657 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+09.03.2024 15:31:23.711 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09.03.2024 15:31:23.743 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+09.03.2024 15:31:23.768 [main] INFO   o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09.03.2024 15:31:23.897 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09.03.2024 15:31:24.106 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09.03.2024 15:31:24.110 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09.03.2024 15:31:24.416 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09.03.2024 15:31:24.957 [main] WARN   o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+09.03.2024 15:31:25.206 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+09.03.2024 15:31:25.206 [main] INFO   o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+09.03.2024 15:31:25.206 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+09.03.2024 15:31:25.206 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {message-handler:handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+09.03.2024 15:31:25.206 [main] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttInputChannel' has 1 subscriber(s).
+09.03.2024 15:31:25.206 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean 'handler.serviceActivator'
+09.03.2024 15:31:25.207 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {message-handler:mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+09.03.2024 15:31:25.207 [main] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttOutboundChannel' has 1 subscriber(s).
+09.03.2024 15:31:25.207 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean 'mqttOutbound.serviceActivator'
+09.03.2024 15:31:25.207 [main] INFO   o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway - started bean 'mqttGateway#senToMqtt(String, String)'
+09.03.2024 15:31:25.207 [main] INFO   o.s.i.g.AnnotationGatewayProxyFactoryBean - started bean 'mqttGateway'; defined in: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'; from source: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'
+09.03.2024 15:31:25.544 [main] INFO   o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - started bean 'inbound'; defined in: 'class path resource [com/mapper/mqtt/services/MqttService.class]'; from source: 'com.mapper.mqtt.services.MqttService.inbound()'
+09.03.2024 15:31:25.544 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6000"]
+09.03.2024 15:31:25.559 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 6000 (http) with context path ''
+09.03.2024 15:31:25.568 [main] INFO   c.m.m.MqttApplication - Started MqttApplication in 7.79 seconds (process running for 8.44)
+09.03.2024 15:32:00.010 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@743a64c8 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.011 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@5d543143 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.011 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@23afcaa2 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.012 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@494f63b (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.012 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@b187470 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.012 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@77ba9279 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.013 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@2a1dacf6 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.013 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@99bb2a0 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.013 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@4168fc17 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.014 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@62628719 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:32:00.289 [http-nio-6000-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09.03.2024 15:32:00.289 [http-nio-6000-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09.03.2024 15:32:00.291 [http-nio-6000-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+09.03.2024 15:36:55.757 [SpringApplicationShutdownHook] INFO   o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - stopped bean 'inbound'; defined in: 'class path resource [com/mapper/mqtt/services/MqttService.class]'; from source: 'com.mapper.mqtt.services.MqttService.inbound()'
+09.03.2024 15:36:55.758 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - Removing {message-handler:mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+09.03.2024 15:36:55.758 [SpringApplicationShutdownHook] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttOutboundChannel' has 0 subscriber(s).
+09.03.2024 15:36:55.759 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - stopped bean 'mqttOutbound.serviceActivator'
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway - stopped bean 'mqttGateway#senToMqtt(String, String)'
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.g.AnnotationGatewayProxyFactoryBean - stopped bean 'mqttGateway'; defined in: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'; from source: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - Removing {message-handler:handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttInputChannel' has 0 subscriber(s).
+09.03.2024 15:36:55.760 [SpringApplicationShutdownHook] INFO   o.s.i.e.EventDrivenConsumer - stopped bean 'handler.serviceActivator'
+09.03.2024 15:36:55.763 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09.03.2024 15:36:55.765 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09.03.2024 15:36:55.769 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+09.03.2024 15:37:00.010 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@39f846 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.011 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@165e2f31 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.011 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@306d73fd (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.011 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@7fd9567e (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.012 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@47ff7821 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.012 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@20bfe048 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.012 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@7b969d39 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.013 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@4ec95e93 (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.013 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@72cb191b (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:00.013 [spring-session-1] WARN   c.z.h.pool.PoolBase - MapperDB - Failed to validate connection org.postgresql.jdbc.PgConnection@2d290aaa (Соединение уже было закрыто). Possibly consider using a shorter maxLifetime value.
+09.03.2024 15:37:01.464 [main] INFO   c.m.m.MqttApplication - Starting MqttApplication using Java 17 with PID 18328 (J:\java\mapper\mqtt-gateway\target\classes started by User in J:\java\mapper)
+09.03.2024 15:37:01.465 [main] INFO   c.m.m.MqttApplication - No active profile set, falling back to 1 default profile: "default"
+09.03.2024 15:37:01.504 [main] INFO   o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file 'J:\java\mapper\compose.yaml'
+09.03.2024 15:37:02.832 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Created
+09.03.2024 15:37:02.833 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Created
+09.03.2024 15:37:02.836 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Starting
+09.03.2024 15:37:02.836 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Starting
+09.03.2024 15:37:04.224 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Started
+09.03.2024 15:37:04.483 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Started
+09.03.2024 15:37:04.483 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Waiting
+09.03.2024 15:37:04.483 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Waiting
+09.03.2024 15:37:04.997 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper_postgres  Healthy
+09.03.2024 15:37:04.997 [OutputReader-stderr] INFO   o.s.b.d.c.c.DockerCli -  Container mapper-mosquitto-1  Healthy
+09.03.2024 15:37:06.353 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:37:06.353 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09.03.2024 15:37:06.365 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+09.03.2024 15:37:06.371 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+09.03.2024 15:37:06.371 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09.03.2024 15:37:06.376 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+09.03.2024 15:37:06.480 [main] INFO   o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+09.03.2024 15:37:06.486 [main] INFO   o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+09.03.2024 15:37:06.779 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 6000 (http)
+09.03.2024 15:37:06.785 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6000"]
+09.03.2024 15:37:06.786 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+09.03.2024 15:37:06.786 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+09.03.2024 15:37:06.832 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+09.03.2024 15:37:06.833 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 934 ms
+09.03.2024 15:37:07.037 [main] INFO   o.f.c.i.l.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+09.03.2024 15:37:07.037 [main] INFO   o.f.c.i.l.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+09.03.2024 15:37:07.037 [main] INFO   o.f.c.i.l.VersionPrinter - 
+09.03.2024 15:37:07.066 [main] INFO   o.f.c.FlywayExecutor - Database: jdbc:postgresql://127.0.0.1:5432/MapperDB (PostgreSQL 16.1)
+09.03.2024 15:37:07.073 [main] WARN   o.f.c.i.d.b.Database - Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+09.03.2024 15:37:07.093 [main] INFO   o.f.c.i.c.DbValidate - Successfully validated 1 migration (execution time 00:00.012s)
+09.03.2024 15:37:07.125 [main] INFO   o.f.c.i.c.DbMigrate - Current version of schema "public": 1.0.0
+09.03.2024 15:37:07.125 [main] ERROR  o.f.c.i.c.DbMigrate - Schema "public" has version 1.0.0, but no migration could be resolved in the configured locations !
+09.03.2024 15:37:07.128 [main] INFO   o.f.c.i.c.DbMigrate - Schema "public" is up to date. No migration necessary.
+09.03.2024 15:37:07.150 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+09.03.2024 15:37:07.178 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bb4ed71
+09.03.2024 15:37:07.180 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+09.03.2024 15:37:07.238 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09.03.2024 15:37:07.275 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+09.03.2024 15:37:07.301 [main] INFO   o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09.03.2024 15:37:07.436 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09.03.2024 15:37:07.644 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09.03.2024 15:37:07.648 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09.03.2024 15:37:07.955 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09.03.2024 15:37:08.499 [main] WARN   o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.c.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {message-handler:handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttInputChannel' has 1 subscriber(s).
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean 'handler.serviceActivator'
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.e.EventDrivenConsumer - Adding {message-handler:mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+09.03.2024 15:37:08.753 [main] INFO   o.s.i.c.DirectChannel - Channel 'application.mqttOutboundChannel' has 1 subscriber(s).
+09.03.2024 15:37:08.754 [main] INFO   o.s.i.e.EventDrivenConsumer - started bean 'mqttOutbound.serviceActivator'
+09.03.2024 15:37:08.754 [main] INFO   o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway - started bean 'mqttGateway#senToMqtt(String, String)'
+09.03.2024 15:37:08.754 [main] INFO   o.s.i.g.AnnotationGatewayProxyFactoryBean - started bean 'mqttGateway'; defined in: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'; from source: 'file [J:\java\mapper\mqtt-gateway\target\classes\com\mapper\mqtt\intarfaces\MqttGateway.class]'
+09.03.2024 15:37:09.091 [main] INFO   o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - started bean 'inbound'; defined in: 'class path resource [com/mapper/mqtt/services/MqttService.class]'; from source: 'com.mapper.mqtt.services.MqttService.inbound()'
+09.03.2024 15:37:09.091 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6000"]
+09.03.2024 15:37:09.104 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 6000 (http) with context path ''
+09.03.2024 15:37:09.113 [main] INFO   c.m.m.MqttApplication - Started MqttApplication in 7.891 seconds (process running for 8.825)
+09.03.2024 15:37:25.901 [http-nio-6000-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09.03.2024 15:37:25.902 [http-nio-6000-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09.03.2024 15:37:25.903 [http-nio-6000-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+09.03.2024 15:37:26.296 [MQTT Call: MapperSever] INFO   c.m.m.p.JsonParser - ValuesGpsDevices(token=token1, ownerId=token1, alt=446, speed=35, lat=102.779, lon=52.891)
+09.03.2024 15:37:30.315 [MQTT Call: MapperSever] INFO   c.m.m.p.JsonParser - ValuesGpsDevices(token=token1, ownerId=token1, alt=435, speed=51, lat=102.557, lon=54.778)
+09.03.2024 15:37:43.330 [MQTT Call: MapperSever] INFO   c.m.m.p.JsonParser - ValuesGpsDevices(token=token1, ownerId=token1, alt=445, speed=70, lat=102.779, lon=53.89)
+09.03.2024 15:38:26.339 [MQTT Call: MapperSever] INFO   c.m.m.p.JsonParser - ValuesGpsDevices(token=token1, ownerId=token1, alt=431, speed=22, lat=102.557, lon=54.223)
+09.03.2024 15:38:52.360 [MQTT Call: MapperSever] INFO   c.m.m.p.JsonParser - ValuesGpsDevices(token=token1, ownerId=token1, alt=445, speed=73, lat=102.446, lon=53.557)

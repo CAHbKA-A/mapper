@@ -23,3 +23,10 @@ spring:
 
   thymeleaf:
     cache: false  # выключаем кэширование страниц на время разработки
+
+#  logging:
+#    level:
+#      root: INFO
+#
+#      org:
+#        springframework: INFO

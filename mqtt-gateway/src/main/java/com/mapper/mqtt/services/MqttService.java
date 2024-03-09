@@ -1,5 +1,9 @@
 package com.mapper.mqtt.services;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mapper.mqtt.entitys.GpsDevice;
+import com.mapper.mqtt.parsers.JsonParser;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +20,8 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
 import org.springframework.messaging.MessagingException;
+
+
 
 @Configuration
 public class MqttService {
@@ -65,16 +71,28 @@ public class MqttService {
                 String topic = message.getHeaders().get(MqttHeaders.RECEIVED_TOPIC).toString();
                 if (topic.equals("IOT/token1")) {
                     System.out.println("OUR topic");
-                    System.out.println(message.getPayload());
+
+                    JsonParser jsonParser = new JsonParser();
+                    jsonParser.parse(message);
+
+
                 } else {
+
                     System.out.println("spam topic");
-                    System.out.println(message.getPayload());
                 }
+
+
 
             }
 
         };
     }
+
+//    private DeviceDTO JSONConvert(Message message) throws JsonProcessingException {
+//        ObjectMapper mapper = new ObjectMapper();
+//        DeviceDTO deviceDTO = mapper.readValue(message, DeviceDTO.class);
+//        return  deviceDTO;
+//    }
 
     @Bean
     public MessageChannel mqttOutboundChannel() {

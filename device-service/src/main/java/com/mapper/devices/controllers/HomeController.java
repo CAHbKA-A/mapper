@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+//import org.slf4j.Logger;
 
 import java.util.List;
 
@@ -18,6 +19,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/")
 public class HomeController {
+
+
     private final DeviceService deviceService;
 //    @GetMapping("/")
 //    public String home() {

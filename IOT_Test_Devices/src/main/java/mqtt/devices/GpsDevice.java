@@ -1,4 +1,4 @@
-package mqtt.devises;
+package mqtt.devices;
 
 import lombok.Data;
 

@@ -4,8 +4,8 @@ package mqtt.controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
-import mqtt.devises.GpsDevice;
-import mqtt.devises.ValuesGpsDevices;
+import mqtt.devices.GpsDevice;
+import mqtt.devices.ValuesGpsDevices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -27,14 +27,19 @@ public class beant {
         gpsDevice.setToken("IOT/token1");
         Random random = new Random();
         while (true) {
+
+            gpsDevice.setValues(new ValuesGpsDevices("token1", "token1",(450- random.nextInt(20))+"",random.nextInt(120)+"",(104 - 0.111*random.nextInt(20))+"",(55 - 0.111*random.nextInt(20))+""));
+            sendPost(convertToJSON(gpsDevice));
+            System.out.println("sent");
+            System.out.println(convertToJSON(gpsDevice));
+
+
             try {
                 Thread.sleep(1000 * random.nextInt(50));
             }  catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            gpsDevice.setValues(new ValuesGpsDevices("1",(450- random.nextInt(20))+"",random.nextInt(120)+"",(104 - 0.111*random.nextInt(20))+"",(55 - 0.111*random.nextInt(20))+""));
-            sendPost(convertToJSON(gpsDevice));
-            System.out.println("sending");
+
         }
 
 
